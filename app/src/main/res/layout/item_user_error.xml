@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/errorFooterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="24dp"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="@string/item_error_text"
+        app:drawableEndCompat="@drawable/ic_refresh_24"
+        app:drawableTint="@color/textColorPrimary" />
+</FrameLayout>

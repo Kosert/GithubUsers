@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GithubUsers</string>
+
+    <string name="item_error_text">Failed to load more items. Tap to retry.</string>
+    <string name="network_error">Error downloading data. Try again later.</string>
+
+    <string name="location_at">Location: %s</string>
+    <string name="registered_at">Registered on %s</string>
+    <string name="following_count">Following: %d</string>
+    <string name="followers_count">Followers: %d</string>
+</resources>

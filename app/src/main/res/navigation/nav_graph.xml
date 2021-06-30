@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="me.kosert.githubusers.ui.list.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/goToUserFragment"
+            app:destination="@id/userFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="me.kosert.githubusers.ui.user.UserProfileFragment"
+        android:label="UserProfileFragment"
+        tools:layout="@layout/fragment_user">
+
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
